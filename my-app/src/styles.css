@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('F:\Projects\final web project\Project Web Development A\project\front-End\ecommerce_website\public\img\65755.jpg'); 
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif; 
+  }
+  
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .logo-image {
+    width: 100px;
+    height: auto;
+    margin-right: 10px; /* Add some spacing between logo and text */
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: #d3d0d0; /* Change the text color to a suitable one */
+    margin: 0;
+  }
+  
+  .signup-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 30px;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(224, 219, 219, 0.726);
+    border-radius: 15px;
+  }
+  .registration-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 30px;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(224, 219, 219, 0.726);
+    border-radius: 15px;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%; /* Make the buttons take full width of the container */
+  }
+  
+  button {
+    width: 50%;
+    margin-bottom: 15px;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color:rgba(41, 46, 39, 0.726); 
+  }
+
+  .signin-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .already-have {
+    font-size: 17px;
+    margin-bottom: 5px;
+  }
+  
+  .signUp {
+    background-color: #1eff00;
+    color: #fff;
+  }
+  
+  .signIn {
+    background-color: rgb(2, 0, 128);
+    color: #fff;
+  }
+  
+  .or {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  .logo-image {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Add space between image and heading */
+  }
+  
