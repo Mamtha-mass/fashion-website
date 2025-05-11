@@ -35,6 +35,10 @@ router.post('/signup', async (req, res) => {
 router.post('/signin', async (req, res) => {
   try {
     const { email, password } = req.body;
+    if (!email || !password) {
+      return res.status(400).json({ message: 'Email and password are required' });
+    }
+    console.log(email, password);
 
     // Find the user by email
     const exsistuser = await user.findOne({ email }).exec();
@@ -47,9 +51,6 @@ router.post('/signin', async (req, res) => {
     if (exsistuser.password !== password) {
       return res.status(401).json({ message: `Invalid email or password ` });
     }
-
-    //if a admin account user credentials
-   
 
     if (exsistuser.password == password && exsistuser.role == 'admin') {
       return res.status(401).json({ message: `this is admin` });

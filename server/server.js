@@ -35,6 +35,8 @@ app.get('/', (req, res) => {
     res.send('Welcome to the backend server!');
   });
 
+app.use('/cart', require('./routes/cart'));
+
 // custom error handling 
 app.use(errorHandler);
 

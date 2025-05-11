@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 import { useAuth0 } from "@auth0/auth0-react";
 import logo from './logo.svg';
 import './nav.css'
-const Nav = ({searchbtn}) => {
+const Nav = ({searchbtn, userId}) => {
     const [search, setSearch] = useState()
     const { loginWithRedirect, logout, user, isAuthenticated} = useAuth0();
   return (
@@ -40,7 +40,7 @@ const Nav = ({searchbtn}) => {
                 }
                 <div className='second_icon'>
                 <Link to="/" className='link'><AiOutlineHeart /></Link>
-                <Link to="/cart" className='link'><BsBagCheck /></Link>
+                <Link to={`/cart/get-cart/${userId}`} className='link'><BsBagCheck /></Link>
                 </div>
             </div>
         </div>

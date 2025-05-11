@@ -45,14 +45,14 @@ const Productdetail =
     {
         id:5,
         Title:"Womens pink top",
-        Cat: 'Women',
+        Cat: 'Female',
         Price: 'RS. 800',
         Img: tp5
     },
     {
         id:6,
         Title:"Women Jeans",
-        Cat: 'Women',
+        Cat: 'Female',
         Price: 'RS. 1560',
         Img: tp6
     },
